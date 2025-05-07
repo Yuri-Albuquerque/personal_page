@@ -3,13 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuri Albuquerque - Professional Curriculum</title>
+    <title>Yuri Albuquerque - Professional Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #3390FF;
             --secondary-color: #4F4F4F;
             --accent-color: #6A6A6A;
+            --bg-color: #ffffff;
+            --text-color: #333333;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #4DA3FF;
+            --secondary-color: #CCCCCC;
+            --accent-color: #888888;
+            --bg-color: #1A1A1A;
+            --text-color: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+        
+        :root {
+            --primary-color: #3390FF;
+            --secondary-color: #4F4F4F;
+            --accent-color: #6A6A6A;
+            --bg-color: #ffffff;
+            --text-color: #333333;
         }
 
         body {
@@ -19,6 +48,50 @@
             margin: 0 auto;
             padding: 20px;
             color: var(--secondary-color);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .pdf-button {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-color);
+            border: 1px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            background: var(--bg-color);
+            color: var(--text-color);
         }
 
         .header {
