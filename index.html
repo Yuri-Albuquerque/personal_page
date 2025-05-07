@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Albuquerque - Professional Curriculum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3390FF;
+            --secondary-color: #4F4F4F;
+            --accent-color: #6A6A6A;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--secondary-color);
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .name {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--secondary-color);
+        }
+
+        .tagline {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .contact-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .timeline-item {
+            margin: 2rem 0;
+            padding-left: 2rem;
+            border-left: 2px solid var(--primary-color);
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .language-skill {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+        }
+
+        .badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="name">Yuri Albuquerque</h1>
+        <p class="tagline">PhD in Applied Mathematics | Machine Learning & NLP Specialist</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <a href="mailto:yuri.falbu@gmail.com">
+                    <i class="fas fa-envelope"></i> yuri.falbu@gmail.com
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://linkedin.com/in/yuri-flores-95b33846">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/Yuri-Albuquerque">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="timeline-item">
+            <h3>Researcher - ICTi Itaú</h3>
+            <p class="timeline-date">July 2024 - Present | São Paulo, BR</p>
+            <ul>
+                <li>Leading research in mathematical models for finance and NLP</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Data Scientist - C6 Bank</h3>
+            <p class="timeline-date">Nov 2021 - June 2024 | São Paulo, BR</p>
+            <ul>
+                <li>Developed AI-powered chatbots using LangChain and VertexAI</li>
+                <li>Implemented GCP infrastructure with Terraform</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages & Frameworks</h3>
+                <p>Python, Go, C++, TensorFlow, PyTorch</p>
+            </div>
+            <div class="skill-category">
+                <h3>ML Operations</h3>
+                <p>VertexAI, AWS Bedrock, CI/CD Pipelines</p>
+            </div>
+            <div class="skill-category">
+                <h3>Data Engineering</h3>
+                <p>BigQuery, SQL, Data Pipelines</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+            <h3>PhD in Applied Mathematics</h3>
+            <p class="timeline-date">University of São Paulo | 2017-2021</p>
+            <p>Focus: Shape optimization and level set methods</p>
+        </div>
+    </section>
+
+    <!-- Add more sections following similar patterns -->
+
+</body>
+</html>
