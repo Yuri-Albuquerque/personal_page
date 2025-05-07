@@ -184,6 +184,13 @@
     </style>
 </head>
 <body>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <a href="path/to/cv.pdf" class="pdf-button" download>
+        <button>Download PDF</button>
+    </a>
     <header class="header">
         <h1 class="name">Yuri Albuquerque</h1>
         <p class="tagline">PhD in Applied Mathematics | Machine Learning & NLP Specialist</p>
@@ -257,5 +264,95 @@
 
     <!-- Add more sections following similar patterns -->
 
+    <section class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <canvas id="skillsChart"></canvas>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>AI Chatbot System</h3>
+                <p>Developed a LangChain-based chatbot using VertexAI</p>
+                <div class="badges">
+                    <span class="badge">Python</span>
+                    <span class="badge">NLP</span>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Blog</h2>
+        <div id="blog-posts">
+            <!-- Blog posts loaded via JavaScript -->
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        // Dark Mode Toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        }
+
+        // Skills Chart
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Python', 'Machine Learning', 'Data Engineering', 'Cloud Infrastructure', 'Mathematics'],
+                datasets: [{
+                    label: 'Skill Level',
+                    data: [9, 8, 7, 8, 9],
+                    backgroundColor: 'rgba(51, 144, 255, 0.2)',
+                    borderColor: '#3390FF'
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                }
+            }
+        });
+
+        // Blog Integration (Example using placeholder API)
+        fetch('https://api.example.com/blog-posts')
+            .then(response => response.json())
+            .then(posts => {
+                const container = document.getElementById('blog-posts');
+                posts.forEach(post => {
+                    container.innerHTML += `
+                        <div class="blog-post">
+                            <h3>${post.title}</h3>
+                            <p>${post.excerpt}</p>
+                            <a href="${post.url}">Read more</a>
+                        </div>
+                    `;
+                });
+            });
+    </script>
 </body>
 </html>
