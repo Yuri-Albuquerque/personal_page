@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,6 +90,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="theme-toggle" onclick="toggleTheme()">
         <i id="theme-icon" class="fas fa-moon"></i>
@@ -98,7 +100,21 @@
         <h1 class="name">Yuri Albuquerque</h1>
         <p class="tagline">PhD in Applied Mathematics | Machine Learning & NLP Specialist</p>
         <div class="contact-info">
-            <!-- Contact items here -->
+            <div class="contact-item">
+                <a href="mailto:yuri.falbu@gmail.com">
+                    <i class="fas fa-envelope"></i> yuri.falbu@gmail.com
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://linkedin.com/in/yuri-flores-95b33846">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/Yuri-Albuquerque">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
     </header>
 
@@ -111,13 +127,67 @@
                 <li>Leading research in mathematical models for finance and NLP</li>
             </ul>
         </div>
-        <!-- More experience items -->
+
+        <div class="timeline-item">
+            <h3>Data Scientist - C6 Bank</h3>
+            <p class="timeline-date">Nov 2021 - June 2024 | São Paulo, BR</p>
+            <ul>
+                <li>Developed dynamic webhooks using Go to integrate Dialogflow with external systems</li>
+                <li>Provisioned GCP infrastructure with Terraform for scalable data applications</li>
+                <li>Deployed generative AI models on VertexAI for organizational decision-making</li>
+                <li>Implemented LangGraph agent with LLLM providers like OpenAI, AWS Bedrock and Google APIs</li>
+                <li>Led cross-functional collaboration between technical and business teams</li>
+            </ul>
+        </div>
+        <div class="timeline-item">
+            <h3>Professor - IFSP</h3>
+            <p class="timeline-date">Jan 2022 - Nov 2022 | Bragança Paulista, BR</p>
+            <ul>
+                <li>Taught undergraduate courses in Calculus, Linear Algebra, and Numerical Methods</li>
+                <li>Programs: Mathematics, System Analysis, Automation Engineering</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Product Analyst - MAPS S.A</h3>
+            <p class="timeline-date">Jul 2016 - Jul 2017 | São Paulo, BR</p>
+            <ul>
+                <li>Developed financial modeling systems with Java/Groovy</li>
+                <li>Implemented CI/CD pipelines with Git and Terraform (IaaC)</li>
+                <li>Conducted A/B testing and measured client satisfaction (NPS/CSAT)</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Consultant Analyst - CSC Brasil</h3>
+            <p class="timeline-date">2011 - 2013 | Rio de Janeiro, BR</p>
+            <ul>
+                <li>Optimized insurance claim processes for Bradesco Seguros</li>
+                <li>Developed fraud detection systems and payment calculators</li>
+                <li>Conducted financial audits for salvage item recovery</li>
+            </ul>
+        </div>
     </section>
 
     <section class="section">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-chart">
             <canvas id="skillsChart"></canvas>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages & Frameworks</h3>
+                <p>Python, Go, C++, TensorFlow, PyTorch</p>
+            </div>
+            <div class="skill-category">
+                <h3>ML Operations</h3>
+                <p>VertexAI, AWS Bedrock, CI/CD Pipelines</p>
+            </div>
+            <div class="skill-category">
+                <h3>Data Engineering</h3>
+                <p>BigQuery, SQL, Data Pipelines</p>
+            </div>
         </div>
     </section>
 
@@ -126,8 +196,13 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>AI Chatbot System</h3>
-                <p>Developed LangChain-based chatbot using VertexAI</p>
+                <p>Developed LangGraph LLM-based Agents for financial and NLP tasks</p>
             </div>
+            <div class="project-card">
+                <h3>Financial Modeling System</h3>
+                <p>Created Java/Groovy-based financial modeling system for MAPS S.A</p>
+            </div>
+        
             <!-- More project cards -->
         </div>
     </section>
@@ -138,13 +213,83 @@
             <!-- Form fields here -->
         </form>
     </section>
+    <section class="section">
+        <h2 class="section-title">Scientific Publications</h2>
 
+        <div class="subsection">
+            <h3>Theses & Dissertations</h3>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <a href="https://www.teses.usp.br/teses/disponiveis/45/45132/tde-29112021-190556/publico/Yuri_Albuquerque_tese_vfinal.pdf"
+                        target="_blank">
+                        Shape Optimization and Level Set Method Applied to Inversion Problems
+                    </a>
+                    <div class="publication-details">
+                        Yuri F. Albuquerque • PhD Thesis • University of São Paulo • 2021
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <a href="http://repositorio.unicamp.br/bitstream/REPOSIP/325361/1/Albuquerque_YuriFlores_M.pdf"
+                        target="_blank">
+                        Electromagnetic Field Response in Conductive Media
+                    </a>
+                    <div class="publication-details">
+                        Yuri F. Albuquerque • Master's Thesis • UNICAMP • 2016
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <h3>Journal Articles</h3>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <a href="https://doi.org/10.1137/20M1362943" target="_blank">
+                        Level Set-Based Shape Optimization Approach for Sharp-Interface Reconstructions
+                    </a>
+                    <div class="publication-details">
+                        Albuquerque, Y.F., Laurain, A., Yousept, I. • SIAM Journal on Applied Mathematics • 2021
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <a href="http://iopscience.iop.org/10.1088/1361-6420/ab9f87" target="_blank">
+                        Shape Optimization Approach for Electrical Impedance Tomography
+                    </a>
+                    <div class="publication-details">
+                        Albuquerque, Y.F., Laurain, A., Sturm, K. • Inverse Problems • 2020
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <h3>Conference Proceedings</h3>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202113171" target="_blank">
+                        Sharp-Interface Imaging Using Finite Elements
+                    </a>
+                    <div class="publication-details">
+                        Roberts, K., Laurain, A., Albuquerque, Y. • EAGE Annual Conference • 2021
+                    </div>
+                </li>
+                <li class="publication-item">
+                    <a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202011976" target="_blank">
+                        Reconstruction of Sharp Interfaces in Full Waveform Inversion
+                    </a>
+                    <div class="publication-details">
+                        Albuquerque, Y., Laurain, A. • EAGE Annual Conference • 2020
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <script>
         // Dark Mode Toggle
         function toggleTheme() {
             const body = document.body;
             const themeIcon = document.getElementById('theme-icon');
-            
+
             if (body.getAttribute('data-theme') === 'dark') {
                 body.removeAttribute('data-theme');
                 themeIcon.classList.replace('fa-sun', 'fa-moon');
@@ -160,7 +305,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme') || 'light';
             const themeIcon = document.getElementById('theme-icon');
-            
+
             if (savedTheme === 'dark') {
                 document.body.setAttribute('data-theme', 'dark');
                 themeIcon.classList.replace('fa-moon', 'fa-sun');
@@ -183,4 +328,5 @@
         });
     </script>
 </body>
+
 </html>

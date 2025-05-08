@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper,academicons]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.5cm,right=1.75cm,top=1.5cm,bottom=1.5cm,columnsep=1cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{hyperref}
+\usepackage{setspace}
+%\doublespacing
+% or:
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3390FF}
+\definecolor{SlateGrey}{HTML}{4F4F4F}
+\definecolor{LightGrey}{HTML}{6A6A6A}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Yuri Albuquerque \\
+    \footnotesize{PhD in Applied Mathematics from the University of S\~ao Paulo - Brazil}}
+\tagline{\color{black}{Interests}: Machine Learning, Natural Language Processing, MLOps\\ 
+Applied Math Scientific Computation \& software development}
+
+\photoR{2.5cm}{ph}
+
+\personalinfo{%
+  
+  \email{yuri.falbu@gmail.com}
+  \phone{(+55) 11 995528842}
+  \mailaddress{\href{https://goo.gl/maps/3fjCM3dTcfoyhkow5}{Santa Barbara st., 40, Alto Santana area, Goias city, GO - Brazil}}
+  \location{\href{https://goo.gl/maps/3fjCM3dTcfoyhkow5}{Goias city - Brazil}}
+  \homepage{yuri-albuquerque.github.io/yuri_blog/}
+%   \twitter{@FalbuYuri}
+  \linkedin{yuri-flores-95b33846}
+  \github{Yuri-Albuquerque} % I'm just making this up though.
+  \orcid{0000-0002-8495-5511} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+\onehalfspacing
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{1}
+
+\cvsection{Job experience}
+\cvevent{Researcher}{ICTi - Itaú}{July 2024}{S\~ao Paulo, SP, Brazil}
+\begin{itemize}
+    \item I am currently a researcher at ICTi Itaú, mainly working with Mathematical Models for Finance and Natural Language processing
+\end{itemize}
+
+\divider
+\cvevent{Data Scientist}{C6 Bank }{November 2021 -- June 2024}{S\~ao Paulo, SP, Brazil}
+This role at C6 Bank exemplified my dedication to leveraging advanced technologies, strategic thinking, and cross-disciplinary collaboration to enhance user experiences, drive innovation, and elevate the bank's data science initiatives.
+\begin{itemize}
+    \item Pioneered the development of dynamic webhooks utilizing the GO programming language to seamlessly integrate Google's Dialogflow with external systems. This enhanced user interactions, enabling a more personalized and efficient customer experience.
+    \item Led the provisioning of cutting-edge infrastructure on the Google Cloud Platform using Terraform, ensuring optimal performance, scalability, and security for the bank's data-driven applications.
+    \item Innovated by conceptualizing, crafting, and deploying generative AI models on Google VertexAI, resulting in the creation of intelligent tools that facilitated data-driven decision-making across the organization.
+    \item Orchestrated the successful implementation of a high-performing Chatbot using LangChain, contributing to streamlined customer support and engagement through natural language processing and real-time interactions.
+    \item Spearheaded prompt engineering for the Chatbot, harnessing the capabilities of openAI APIs, AWS Bedrock APIs, and Google Palm API. This significantly improved conversational context, accuracy, and relevance in customer interactions.
+    \item Collaborated seamlessly within a cross-functional team, interfacing with developers, designers, and business stakeholders to ensure the alignment of technical solutions with business objectives.
+    
+\end{itemize}
+
+\divider
+
+\cvevent{Professor}{Instituto Federal de S\~ao Paulo (IFSP)}{January 2022 -- November 2022}{Braga\c{c}a Paulista, SP, Brazil}
+In the role of a professor, I delivered instruction in a spectrum of undergraduate courses. These courses encompassed subjects such as Calculus (I, II, and III), Quantitative Financial Methods, Linear Algebra, Analysis, Numerical Computation Methods, Thermodynamics, Wave Theory, and Statistics. My teaching responsibilities spanned across the following bachelor's degree programs:
+\begin{itemize}
+\item Bachelor in Mathematics 
+\item Bachelor in System Analysis and Development
+\item Bachelor in Automation and System Control Engineering
+\end{itemize}
+
+\divider
+
+\cvevent{Product Analyst}{MAPS S.A Soluções e Serviços}{July 2016 -- July 2017}{São Paulo, SP, Brazil}
+In my role as a Product Analyst, I engaged in the development of systems designed to model financial products tailored to the Brazilian market. My primary responsibilities revolved around the creation and implementation of portfolio optimization and calculators. These tools were designed to provide computed interest rates, the number of periods, actual and future prices based on input parameters, spanning a wide array of financial products including swaps, Brazilian bonds, derivatives, options, and future contracts. Specifically, my contributions encompassed the following aspects:
+
+\begin{itemize}
+\item Serving as a Java/\href{https://en.wikipedia.org/wiki/Apache_Groovy}{Groovy} developer, actively involved in the technical implementation of the systems.
+\item Employing the Kanban methodology and Scrum practices to effectively manage tasks and activities. 
+\item Utilizing Git for system version control and the establishment of continuous integration and continuous deployment (CI/CD) pipelines, using Terraform for infrastructure provisioning (IaaC). 
+\item Emphasizing client satisfaction by employing measures such as NPS (Net Promoter Score) and CSAT (Customer Satisfaction Score). Additionally, A/B testing was conducted to assess the impact of new software features. 
+\end{itemize}
+
+Overall, my role encompassed the comprehensive development of financial modeling systems, employing agile methodologies, version control practices, and client-focused measures to ensure the effectiveness and satisfaction of the software solutions provided.
+
+\divider
+
+\cvevent{Consultant Analyst}{CSC Computer Sciences Corp. Brasil S.A}{2011 -- 2013}{Rio de Janeiro, RJ}
+
+As a Consultant Analyst at CSC Computer Sciences Corp. Brasil S.A from 2011 to 2013 in Rio de Janeiro, RJ, I engaged in the following responsibilities:
+
+\begin{itemize}
+\item Conducted thorough and highly detailed mapping of special insurance processes within Bradesco Seguros S.A headquarters.
+\item Optimized physical processes for claims analysis and fraud detection to enhance the reliability and accuracy of opinions provided by Bradesco's claims analysts.
+\item Performed audits and corrections on payment calculators, recovery estimates for "salvaged" items, and compensations. 
+\end{itemize}
+In this role, I played a pivotal part in refining insurance-related processes, boosting operational efficiency, and ensuring accurate financial assessments for Bradesco Seguros S.A.
+% \divider
+
+\cvsection{Education}
+\cvevent{Postdoctoral Research Fellowship in shape optimization, Shell New Technologies}{IME - University of S\~ao Paulo}{2021 -- 2022}{RCGI - Poli USP, Shell Project}
+\begin{itemize}
+\item Conducted advanced research as a postdoctoral fellow, focusing on sharp contrasts identification in full waveform inversion. 
+\item Collaborated with esteemed researchers and contributed to the development and implementation of a shape optimization algorithm for salt body geometry identification related to oil and gas prospection.
+\item Presented research findings at international conferences and contributed to publications in peer-reviewed journals.
+\end{itemize}
+
+\divider
+
+\cvevent{Ph.D. in Applied Mathematics}{IME - University of S\~ao Paulo}{2017 -- 2021}{São Paulo, SP}
+\begin{itemize}
+    \item Attained a Ph.D. degree specializing in continuous optimization, with a comprehensive dissertation titled "Shape optimization and level set method applied to inversion problems".
+    \item Investigated efficient shape optimization methods for the reconstruction of sharp interfaces in the problems of electrical impedance tomography (EIT) and geophysical exploration by full waveform inversion (FWI), resulting in two implementations of shape optimization that depending on the calculation of the shape derivative of the cost function, used in the level set method.
+    \item Collaborated with experts in the field, presenting at conferences and publishing research in reputable journals.
+\end{itemize}
+% \begin{itemize}
+% \item Pesquisa em modelos gerais de Otimização de funcionais de forma e topológicos.
+% \item Artigo \cite{10.1088/1361-6420/ab9f87} publicado na revista 1A \textit{Inverse Problems}.
+% \item Convidado para apresentar o trabalho \cite{eage:/content/papers/10.3997/2214-4609.202011976} na conferencia \href{https://eage.eventsair.com/eageannual2020/}{EAGE-2020} em Amsterdam, Holanda. Este \'e um importante evento sobre geof\'isica computacional. 
+% % \item Tenho experi\^encia com m\'etodos de otimiza\c{c}\~ao e regress\~ao. Tendo implementado algoritmos Quasi-Newton (BFGS), Gradiente de descida, gmres. 
+% \item Experi\^encia em Machine learning, Deep Learning e M\'etodos estat\'isticos para aprendizagem de m\'aquina. 
+% \end{itemize}
+
+\divider
+
+\cvevent{Master in Applied Mathematics and Scientific Computation}{IMECC-Unicamp}{2014 --  2016}{Campinas, SP}
+\begin{itemize}
+    \item Successfully completed a master's degree in Applied Mathematics, enriching knowledge in subjects related to earth tomography techniques, numerical simulations of earth tomography models, and a discussion on the feasibility of method utilization in the industry.  
+    \item Conducted a research thesis titled "Electromagnetic field response in conductive media"\cite{mastersthesis}, delving into a potentially useful method for computing electromagnetic (EM) responses of arbitrary conductivity distributions in the earth.
+    \item Engaged in academic forums, workshops, and seminars, fostering a deep understanding of computation of electromagnetic fields. 
+\end{itemize}
+\divider
+
+\cvevent{B.Sc.in Applied Mathematics}{Unesp}{2006 -- 2010}{S\~ao Jos\'e do Rio Preto - SP}
+Attained a comprehensive education in Mathematics, covering a wide spectrum of foundational and advanced topics.
+\begin{itemize}
+    \item Developed a strong analytical mindset and critical thinking skills through coursework in calculus, algebra, geometry, and discrete mathematics.
+    \item Acquired proficiency in mathematical modeling, effectively translating real-world scenarios into mathematical frameworks.
+    \item Explored abstract concepts such as number theory, set theory, and topology, fostering a deep understanding of theoretical mathematics.
+    \item Engaged in collaborative projects and problem-solving exercises, enhancing teamwork and communication abilities.
+    \item Participated in seminars and workshops, continuously expanding knowledge and staying abreast of emerging mathematical trends.
+    \item Completed an impactful senior project titled "Statistics of Social divisions and wealth distribution in the city os S\~ao Jos\'e do Rio Preto - Brazil" which showcased the application of mathematical principles to solve practical challenges.
+\end{itemize}
+Graduated with a solid foundation in mathematics, prepared to contribute to diverse fields requiring analytical and quantitative expertise.
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+% \vspace{4cm}
+
+\cvsection{Computer Programming Skills}
+Proficient in a diverse range of programming languages and paradigms, with hands-on experience in developing robust and efficient software solutions. Adept at translating complex algorithms and concepts into functional code, I bring a strong foundation in software development practices and a track record of delivering high-quality applications. My programming skills encompass:
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{2.5cm}{0.5cm}{%
+  10/13em/accent!30/\\ Mpi - OpenMP\\ Multiprocessing\\ Multi-task,   
+  30/9em/accent!90/Go - Python,
+  10/11em/accent!20/SQL - BigQuery,
+  10/11em/accent!60/C - C++ - Rust,
+  5/12em/accent!20/Vim - Emacs - Shell script - Git - Terraform,
+  30/12em/accent!70/PyTorch - TensorFlow\\ VertexAi - Palm - Langchain\\ pandas -  pybind11 - Mpi4Py,
+  5/8em/accent!20/Containers\\ Docker - Sigularity - Podman
+}
+\begin{itemize}
+    \item \textbf{Languages}: Proficient in Python, Go, C++, and JavaScript, with a deep understanding of their syntax, libraries, and frameworks. 
+    \item \textbf{Database Management}: Experienced in designing and managing relational databases using SQL tools (usign google BigQuery), ensuring data integrity and efficient querying.
+    \item \textbf{Version Control}: Proficient in utilizing Git for collaborative development, version control, and managing code repositories.
+    \item \textbf{Algorithm Design}: Capable of crafting efficient algorithms and data structures to solve complex problems, with a solid understanding of algorithmic complexity and optimization.
+    \item \textbf{Software Development Lifecycle}: Familiar with Agile methodologies, I am well-versed in requirements analysis, design, implementation, testing, and deployment phases.
+    \item \textbf{Problem Solving}: Adept at breaking down intricate problems and formulating innovative solutions, I thrive in challenging coding scenarios.
+    \item \textbf{Debugging and Troubleshooting}: Skilled in identifying and resolving software bugs, ensuring optimal performance and user experience.
+    \item \textbf{Code Documentation}: Committed to producing clear and comprehensive code documentation, facilitating seamless collaboration and code maintenance.
+\end{itemize}
+From developing full-stack applications to optimizing algorithmic performance, my programming proficiency enables me to contribute effectively to diverse software development projects.    
+
+    % Web Development: Skilled in creating dynamic and responsive web applications using HTML, CSS, and modern front-end frameworks such as React and Vue.js.
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+% \newpage
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+% \switchcolumn
+
+\cvsection{Personal Philosophy}
+\begin{quote}
+``Productivity is never a coincidence. It invariably emerges from a dedication to excellence, strategic preparation, and concentrated endeavor.''
+\end{quote}
+
+\cvsection{Things that i am proud of about myself}
+
+\cvachievement{\faTrophy}{Resilience}{Navigating the realm of science in Brazil has consistently presented its challenges. Embracing the pursuit of pioneering technological research within this context has been an enduring challenge that I've consistently embraced with unwavering enthusiasm.}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{In the face of intricate challenges, I steadfastly uphold my guiding principles and unwavering determination to forge ahead with projects that hold significant value to me.}
+
+\divider
+
+\cvachievement{\faChartLine}{Unceasing Pursuit of Knowledge}{As a dedicated researcher and enthusiastic self-learner, I embody an unwavering pursuit of knowledge, consistently expanding my horizons to contribute meaningfully to both academia and personal advancement.}
+
+\divider
+
+\cvachievement{\faFemale}{Proudly devoted father of two cherished daughters}{Devoted to both my professional pursuits and my role as a dedicated family man, I take immense pride in being a loving father to my two wonderful daughters.}
+
+\cvsection{Strengths}
+
+\cvtag{time management}\cvtag{organizational skills} \cvtag{in-depth investigations}\\ 
+\cvtag{insightful contributions}
+\cvtag{self-learner}\cvtag{positive \& collaborative }
+
+\divider\smallskip
+
+\cvtag{sophisticated mathematical modeling}
+\cvtag{problem-solver}
+\cvtag{innovative}
+
+\cvsection{Language skills}
+
+\cvskill{\textcolor{red}{Native Brazilian Portuguese}}{5}
+% \divider
+
+\cvskill{\textbf{English}: read, write, speaks, well communication and comprehension}{4}
+% \divider
+
+\cvskill{\textbf{Spanish}: read, well comprehension}{3}
+% \divider
+
+\cvskill{\textbf{French}: just read, Learning in process}{2}
+
+
+\cvskill{\textbf{Deutsch}: Learning in process}{1}
+
+% \vspace{4cm}
+
+% \cvsection{Forma\c{c}\~ao}
+% \cvevent{Post-Doctoral fellow researcher}{IME-USP}{2021--2022}{RCGI - Shell Project}
+% \divider
+
+% \cvevent{Ph.D.\ em Matem\'atica Aplicada e Computacional}{USP}{2017 -- 2021}{S\~ao Paulo - SP}
+
+% \divider
+
+% \cvevent{M.Sc.\ em Matem\'atica Aplicada e Computacional}{Unicamp}{2014 -- 2016}{Campinas - SP}
+
+% \divider
+
+% \cvevent{B.Sc.\ em Matem\'atica Aplicada}{Unesp}{2006 -- 2010}{S\~ao Jos\'e do Rio Preto - SP}
+
+
+
+% \cvsection{Refer\^encias}
+
+% % \cvref{name}{email}{mailing address}
+% \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+% {Address Line 1\\Address line 2}
+
+% \divider
+
+% \cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+% {Address Line 1\\Address line 2}
+\cvsection{Prizes}
+\cvevent{Honorable mention in the CAPES award for the best Mathematics PhD thesis}{}{2021}{IME-USP}
+CAPES (Coordination for the Improvement of Higher Education Personnel) is a Brazilian government agency responsible for promoting and supporting higher education, graduate programs, research, and scientific and technological development in the country. It plays a crucial role in providing grants, scholarships, and funding for academic and research activities, as well as evaluating and accrediting graduate programs across various disciplines. CAPES also organizes awards and recognition for outstanding contributions to education, research, and innovation in Brazil.
+% \cvevent{Post-Doctoral fellow researcher}{IME-USP}{2021--2022}{RCGI - Shell Project}
+% \divider
+
+\cvsection{Published scientific articles}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Thesis and Dissertation}},type=masterthesis]
+
+% \divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+
+\divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+\end{paracol}
+
+\end{document}
